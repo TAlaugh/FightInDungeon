@@ -8,6 +8,7 @@ Player::Player(int startX, int startY, Game& g) : _x(startX), _y(startY), _hp(20
     skill = new Skill(0, "강타");
 }
 
+//ㄹㅇㄴㅁㄹㄴㅇㅁㄹㅇㄴㅁ
 void Player::Move(char direction)
 {
     int newX = _x;

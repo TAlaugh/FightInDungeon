@@ -3,7 +3,7 @@
 #include "Game.h"
 using namespace std;
 
-Player::Player(int startX, int startY, Game& g) : _x(startX), _y(startY), _hp(200), _atk(25), _def(10), _inventory(_inventory), game(g)
+Player::Player(int startX, int startY, Game& g) : _x(startX), _y(startY), _hp(200), _atk(25), _def(10), game(g)
 {
     skill = make_shared<Skill>(0, "강타");
 }

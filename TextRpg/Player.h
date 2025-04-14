@@ -23,7 +23,6 @@ public:
         {
             delete item;
         }
-        delete skill;
     }
 
     void Move(char direction);
@@ -50,7 +49,7 @@ public:
     vector<Item*> _equipInventory;
     vector<Item*> _equip;
     Game& game;
-    Skill* skill;
+    shared_ptr<Skill> skill;
 };
 
 class Skill
